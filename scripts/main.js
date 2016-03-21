@@ -4,6 +4,7 @@ var toDoItems = document.querySelector('.toDoItems');
 var toDoList = document.querySelector('.toDoList');
 var addBtn = document.querySelector('.addBtn');
 var resetBtn = document.querySelector('.resetBtn');
+var form = document.querySelector('form');
 
 var userInput = [];
 
@@ -21,7 +22,16 @@ function render() {
 
 toDoItems.addEventListener('click', clearText);
 
-addBtn.addEventListener('click', function() {
+form.addEventListener('submit', function(e) {
+	e.preventDefault();
+	userInput.push(toDoItems.value);
+	render();
+	console.log(userInput);
+	console.log(toDoItems.value);
+});
+
+addBtn.addEventListener('click', function(e) {
+	e.preventDefault();
 	userInput.push(toDoItems.value);
 	render();
 	console.log(userInput);
