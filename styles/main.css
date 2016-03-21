@@ -1,0 +1,30 @@
+body {
+	text-align: center;
+}
+
+.toDoItems {
+	padding: .5em;
+	margin-top: 1.5em;
+	text-align: center;
+}
+
+hr {
+	margin-top: 2em;
+}
+
+.toDoList {
+	padding: 1em;
+	margin: 0 auto;
+	border: solid 0.1em black;
+	width: 30%;
+}
+
+.addBtn {
+	margin-left: 3em;
+	padding: .7em;
+	font-size: .65em;
+}
+
+.resetBtn {
+	margin: 2em;
+}
